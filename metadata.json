@@ -1,0 +1,8 @@
+{
+  "name": "Nexus Sih 152ps",
+  "description": "An AI-powered analytics dashboard providing deep insights into social media trends, sentiment, audience behavior, and network information flow.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
