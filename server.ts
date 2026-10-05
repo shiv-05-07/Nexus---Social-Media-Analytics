@@ -444,26 +444,58 @@ app.delete('/api/investigations/:id', async (req: Request, res: Response) => {
   }
 });
 
-// 7. Initialize Vite Dev Server Middleware or Production Static Handler
+// 7. Healthcheck Route for Deployment & Cloud Run
+app.get('/api/health', (_req: Request, res: Response) => {
+  res.json({
+    status: 'healthy',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime(),
+    database: Boolean(process.env.DATABASE_URL || process.env.SUPABASE_URL),
+  });
+});
+
+// 8. Initialize Vite Dev Server Middleware or Production Static Handler
 async function startServer() {
-  if (process.env.NODE_ENV !== 'production') {
-    const { createServer } = await import('vite');
-    const vite = await createServer({
-      server: { middlewareMode: true },
-      appType: 'spa',
-    });
-    app.use(vite.middlewares);
+  const isProduction = process.env.NODE_ENV === 'production';
+
+  if (!isProduction) {
+    try {
+      const { createServer } = await import('vite');
+      const vite = await createServer({
+        server: { middlewareMode: true },
+        appType: 'spa',
+      });
+      app.use(vite.middlewares);
+    } catch (viteError) {
+      console.warn('Vite dev middleware initialization notice, falling back to static build:', viteError);
+      app.use(express.static(path.join(__dirname, 'dist')));
+      app.get('*', (_req: Request, res: Response) => {
+        res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+      });
+    }
   } else {
     app.use(express.static(path.join(__dirname, 'dist')));
-    app.get('*', (_req, res) => {
+    app.get('*', (_req: Request, res: Response) => {
       res.sendFile(path.join(__dirname, 'dist', 'index.html'));
     });
   }
 
-  app.listen(PORT, () => {
+  const server = app.listen(PORT, () => {
     console.log(`NEXUS server running on http://localhost:${PORT}`);
-    console.log(`Prisma ORM & Supabase integration initialized.`);
+    console.log(`Node Environment: ${process.env.NODE_ENV || 'development'}`);
+  });
+
+  // Graceful shutdown handlers
+  process.on('SIGTERM', () => {
+    console.log('SIGTERM signal received: closing HTTP server');
+    server.close(() => {
+      console.log('HTTP server closed');
+      process.exit(0);
+    });
   });
 }
 
-startServer();
+startServer().catch((err) => {
+  console.error('Fatal server startup failure:', err);
+});
+
