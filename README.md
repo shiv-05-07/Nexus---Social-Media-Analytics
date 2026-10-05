@@ -1,53 +1,97 @@
 # NEXUS
 
+<div align="center">
+
 ### Cross-Platform Social Media Analytics & Intelligence Workspace
 
-NEXUS is a specialized analytical platform designed for multi-platform social media monitoring, explainable sentiment and emotion analysis, emerging narrative detection, audience community clustering, network interaction topology, investigation management, and tamper-evident cryptographic evidence provenance.
+*An explainable, multi-platform intelligence environment for narrative tracking, sentiment & emotion analysis, network topology, and tamper-evident cryptographic evidence provenance.*
 
-```
-[ SIH Problem Statement ID: 26152 ]  •  [ Org: National Technical Research Organisation (NTRO) ]
-[ Category: Software ]              •  [ Theme: Blockchain & Cybersecurity ]
-[ Stack: TypeScript / React 19 / Express / Prisma ORM / PostgreSQL / Tailwind CSS ]
-```
+<br/>
+
+[![SIH Problem Statement](https://img.shields.io/badge/SIH%20Problem%20Statement-ID%3A%2026152-0284c7?style=for-the-badge)](https://sih.gov.in)
+[![Organization](https://img.shields.io/badge/Organization-NTRO-4f46e5?style=for-the-badge)](https://ntro.gov.in)
+[![Category](https://img.shields.io/badge/Category-Software-059669?style=for-the-badge)](#)
+[![Theme](https://img.shields.io/badge/Theme-Blockchain%20%26%20Cybersecurity-dc2626?style=for-the-badge)](#)
+
+<br/>
+
+<!-- Tech Stack Badges with Official Logos -->
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React 19](https://img.shields.io/badge/React%2019-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite%208-646CFF?style=flat-square&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS%204-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)](https://expressjs.com/)
+[![Prisma ORM](https://img.shields.io/badge/Prisma%20ORM-2D3748?style=flat-square&logo=prisma&logoColor=white)](https://www.prisma.io/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com/)
+[![SHA-256 FIPS 180-4](https://img.shields.io/badge/SHA--256-Tamper--Evident-amber?style=flat-square&logo=auth0&logoColor=white)](#)
+
+</div>
 
 ---
 
-## Table of Contents
+## 👥 Team Details & Hackathon Credits
+
+> **Developed for Smart India Hackathon (SIH 2026)**  
+> **Problem Statement:** 26152 — *Social Media Analytics*  
+> **Department:** Computer Science & Engineering (CSE) — **2nd Year**  
+> **Team Name:** **Caffeine Coders**
+
+<div align="center">
+
+| Role | Name | Department & Year | Primary Focus Areas |
+|:---|:---|:---|:---|
+| 👑 **Team Leader** | **Shivam Suthar** | CSE — 2nd Year | System Architecture, Full-Stack Integration & Cryptographic Layer |
+| 💻 **Team Member** | **Zarna Modhia** | CSE — 2nd Year | Frontend Experience, Sentiment & Emotion Analytics UI |
+| 📊 **Team Member** | **Hetvi Vyas** | CSE — 2nd Year | Data Modeling, Narrative Investigation & Trend Metrics |
+| 🔍 **Team Member** | **Apurva Prajapati** | CSE — 2nd Year | Lexical NLP Classification & Audience Intelligence |
+| 🌐 **Team Member** | **Prince Agrawal** | CSE — 2nd Year | Network Graph Topology & Interaction Link Analysis |
+| ⚡ **Team Member** | **Jeet Prajapati** | CSE — 2nd Year | Database Persistence, REST APIs & Data Ingestion Pipelines |
+
+</div>
+
+---
+
+## 📑 Table of Contents
 
 1. [Executive Summary](#1-executive-summary)
 2. [SIH Problem Statement Alignment (ID: 26152)](#2-sih-problem-statement-alignment-id-26152)
-3. [Demonstration Dataset & Data Specifications](#3-demonstration-dataset--data-specifications)
-4. [System Architecture](#4-system-architecture)
-5. [End-to-End Data Flow](#5-end-to-end-data-flow)
-6. [Core Analytical Modules & Algorithms](#6-core-analytical-modules--algorithms)
+3. [Technologies Used](#3-technologies-used)
+4. [Demonstration Dataset & Data Specifications](#4-demonstration-dataset--data-specifications)
+5. [System Architecture](#5-system-architecture)
+6. [End-to-End Data Flow](#6-end-to-end-data-flow)
+7. [Core Analytical Modules & Algorithms](#7-core-analytical-modules--algorithms)
    - [A. Explainable Lexical Sentiment & Emotion Engine](#a-explainable-lexical-sentiment--emotion-engine)
    - [B. Deterministic Trend Scoring & Lifecycle Engine](#b-deterministic-trend-scoring--lifecycle-engine)
    - [C. Audience & Community Intelligence](#c-audience--community-intelligence)
    - [D. Network Topology & Degree Centrality Graph](#d-network-topology--degree-centrality-graph)
    - [E. Narrative Investigation Management](#e-narrative-investigation-management)
    - [F. Cryptographic Hash-Chain Evidence Provenance](#f-cryptographic-hash-chain-evidence-provenance)
-7. [User Experience & Product Navigation](#7-user-experience--product-navigation)
-8. [Backend & Database Architecture](#8-backend--database-architecture)
-9. [REST API Documentation](#9-rest-api-documentation)
-10. [Data Ingestion & Normalization Engine](#10-data-ingestion--normalization-engine)
-11. [Repository Structure](#11-repository-structure)
-12. [Environment Configuration & Variables](#12-environment-configuration--variables)
-13. [Installation & Local Setup Guide](#13-installation--local-setup-guide)
-14. [Current Implementation vs. Future SIH Extension Roadmap](#14-current-implementation-vs-future-sih-extension-roadmap)
-15. [Security, Integrity & Ethical Considerations](#15-security-integrity--ethical-considerations)
-16. [Contributing & License](#16-contributing--license)
+8. [User Experience & Product Navigation](#8-user-experience--product-navigation)
+9. [Backend & Database Architecture](#9-backend--database-architecture)
+10. [REST API Documentation](#10-rest-api-documentation)
+11. [Data Ingestion & Normalization Engine](#11-data-ingestion--normalization-engine)
+12. [Repository Structure](#12-repository-structure)
+13. [Environment Configuration & Variables](#13-environment-configuration--variables)
+14. [Installation & Local Setup Guide](#14-installation--local-setup-guide)
+15. [Current Implementation vs. Future SIH Extension Roadmap](#15-current-implementation-vs-future-sih-extension-roadmap)
+16. [Security, Integrity & Ethical Considerations](#16-security-integrity--ethical-considerations)
+17. [Contributing & License](#17-contributing--license)
+18. [⭐ Star Our GitHub Repository](#18--star-our-github-repository)
 
 ---
 
 ## 1. Executive Summary
 
-NEXUS addresses the core analytical and forensic challenges outlined in **Smart India Hackathon (SIH) Problem Statement 26152** ("Social Media Analytics"), sponsored by the **National Technical Research Organisation (NTRO)** under the **Blockchain & Cybersecurity** theme.
+NEXUS addresses the core analytical and digital forensic challenges outlined in **Smart India Hackathon (SIH) Problem Statement 26152** ("Social Media Analytics"), sponsored by the **National Technical Research Organisation (NTRO)** under the **Blockchain & Cybersecurity** theme.
 
 Modern threat intelligence, counter-disinformation research, and public communication analysis require more than opaque sentiment scores. Analysts must:
-1. Track narratives across fragmented digital platforms simultaneously.
-2. Distinguish observable facts from algorithmic interpretations and working hypotheses.
-3. Understand information propagation through topological link analysis.
-4. Guarantee that archived social posts have not been retroactively altered, fabricated, or deleted.
+
+- 📡 **Track cross-platform narratives** simultaneously across fragmented social ecosystems.
+- 🎯 **Distinguish observed facts** from algorithmic interpretations and working hypotheses.
+- 🕸️ **Understand narrative propagation** through directed interaction link analysis.
+- 🔒 **Guarantee evidence integrity** so archived social events cannot be retroactively altered, falsified, or purged.
 
 NEXUS delivers a unified, deterministic intelligence environment featuring explainable rule-based natural language processing, four-factor trend acceleration indices, graph-based hub and interaction analysis, investigation report generation, and **FIPS 180-4 compliant SHA-256 cryptographic hash-chaining** for verifiable evidence integrity.
 
@@ -55,21 +99,54 @@ NEXUS delivers a unified, deterministic intelligence environment featuring expla
 
 ## 2. SIH Problem Statement Alignment (ID: 26152)
 
+<div align="center">
+
 | SIH Requirement | NEXUS Implementation Status | Implemented Functional Scope | Architectural Boundaries & Limitations |
-|---|---|---|---|
+|:---|:---:|:---|:---|
 | **A. Continuous Data Collection & Timeline Management** | **Partially Implemented (Prototype)** | Deterministic 72-hour synthetic dataset (1,200 events) across 5 platforms, temporal filtering, chronological scrubbers, CSV/JSON batch ingestion, and PostgreSQL persistence. | No active live platform scraping or automated streaming Daemons; ingestion is driven via structured import pipelines and static simulation seeds. |
 | **B. Multi-Dimensional Sentiment & Emotion Inference** | **Implemented Baseline** | Explainable Lexical Valence Scoring (AFINN/VADER derivative with Negation & Modifier rules), 6 emotion classes (`joy`, `anger`, `fear`, `sadness`, `surprise`, `neutral`), confidence scoring, and interactive sandbox testing. | Uses a deterministic rule-based lexicon rather than fine-tuned neural transformer models or external LLM API endpoints. |
 | **C. Automated Demographic & Community Profiling** | **Partial / Structural** | Community cluster segmentation (5 defined clusters), pseudonymous author metadata, multi-language tracking (`en`, `es`, `fr`, `de`, `hi`), and cross-platform affinity distribution. | Profiles represent structural interaction groups and pseudonymous handles; does not perform invasive or speculative inference of real-world age, gender, or home addresses. |
 | **D. Real-Time Trend & Topic Detection** | **Implemented Analytically** | Deterministic four-factor trend algorithm evaluating Volume Growth (40%), Acceleration (30%), Engagement Velocity (20%), and Sentiment Shift (10%) with lifecycle state classification (`emerging`, `growing`, `saturating`, `stable`). | Scores are computed deterministically over the active temporal window rather than using predictive regression models. |
 | **E. Link Analysis & Network Topology** | **Implemented Baseline** | Graph construction from observed `parentEventId` reply/repost relationships, computing in-degree, out-degree, total degree centrality, and connectivity hub identification. | Metrics reflect observed interactions in event metadata. Does not calculate PageRank or betweenness centrality. |
 
+</div>
+
 ---
 
-## 3. Demonstration Dataset & Data Specifications
+## 3. Technologies Used
+
+NEXUS is engineered with a modern, high-performance, type-safe full-stack ecosystem:
+
+### 🎨 Frontend & Interface
+- **React 19 (`^19.0.1`)**: Component-driven declarative UI architecture with modern React Hooks and state concurrency.
+- **TypeScript (`^7.0.2`)**: End-to-end type safety, strict interface contracts, and compilation guarantees.
+- **Vite 8 (`^8.3.2`)**: Next-generation development server and lightning-fast ES-module bundler.
+- **Tailwind CSS 4 (`^4.3.3`)**: High-performance utility-first styling with responsive, analytical UI design.
+- **Lucide React (`^0.546.0`)**: Comprehensive set of vector iconography for analytics and dashboards.
+- **React Router 7 (`^7.18.4`)**: Client-side SPA routing with 16 distinct analytical and documentation routes.
+
+### ⚙️ Backend & API
+- **Node.js (`>=18.0.0`)**: High-throughput JavaScript runtime engine.
+- **Express.js (`^4.21.2`)**: Robust REST API framework for database diagnostics, event batching, and investigation CRUD.
+- **tsx (`^4.21.0`) & esbuild (`^0.28.2`)**: Rapid TypeScript execution and build compilation.
+
+### 🗄️ Database & Storage Layer
+- **PostgreSQL**: Enterprise-grade relational database for structured event, investigation, and audit records.
+- **Prisma ORM (`^6.4.1`)**: Next-generation TypeScript ORM with schema migrations and type-safe query generation.
+- **Supabase PostgreSQL (`@supabase/supabase-js ^2.117.2`)**: Scalable cloud database infrastructure with direct pooler support.
+
+### 🧠 Analytical & Cryptographic Utilities
+- **Deterministic Lexical NLP Engine**: Transparent valence classification with contextual negation/intensifier modifiers.
+- **4-Factor Narrative Trend Acceleration Index**: Weighted composite scoring model (0–100 scale).
+- **FIPS 180-4 SHA-256 Cryptographic Engine**: Pure TypeScript cryptographic hash-chaining for tamper-evident provenance.
+
+---
+
+## 4. Demonstration Dataset & Data Specifications
 
 NEXUS includes a deterministic PRNG-generated baseline dataset (`src/data/mockDataGenerator.ts`) created using a seeded Mulberry32 algorithm. This guarantees reproducible analytics across test environments.
 
-### Synthetic Corpus Parameters
+### 📊 Synthetic Corpus Parameters
 
 ```text
 ├── Event Volume:           1,200 normalized social events
@@ -82,7 +159,7 @@ NEXUS includes a deterministic PRNG-generated baseline dataset (`src/data/mockDa
 └── Evidence Chain:         1,200 cryptographically chained SHA-256 hashes
 ```
 
-### Monitored Analytical Topics
+### 🏷️ Monitored Analytical Topics
 
 1. **Deepfake Election Rumors** — Synthetic audio and disinformation cascades leading to high-panic/negative emotion shifts.
 2. **Clean Energy Grid Transition** — Infrastructure updates, grid reliability data, and policy discussions.
@@ -91,7 +168,7 @@ NEXUS includes a deterministic PRNG-generated baseline dataset (`src/data/mockDa
 5. **Semiconductor Supply Chain** — Fabrication capacity, global logistics, and geopolitical trade dynamics.
 6. **Urban Air Mobility** — Advanced air mobility prototyping, airspace safety protocols, and public perception.
 
-### Defined Community Clusters
+### 👥 Defined Community Clusters
 
 - **Cluster-Alpha: Tech & Policy Experts** — Regulatory compliance, AI policy, and technical evaluation.
 - **Cluster-Beta: Citizen Watchdogs** — Fact-checking, disinformation identification, and synthetic media debunking.
@@ -101,7 +178,7 @@ NEXUS includes a deterministic PRNG-generated baseline dataset (`src/data/mockDa
 
 ---
 
-## 4. System Architecture
+## 5. System Architecture
 
 NEXUS follows a decoupled client-server architecture with an Express-based API layer, client-side analytical context, Prisma ORM database abstraction, and local deterministic computational engines.
 
@@ -146,7 +223,7 @@ flowchart TB
 
 ---
 
-## 5. End-to-End Data Flow
+## 6. End-to-End Data Flow
 
 ```mermaid
 sequenceDiagram
@@ -182,7 +259,7 @@ sequenceDiagram
 
 ---
 
-## 6. Core Analytical Modules & Algorithms
+## 7. Core Analytical Modules & Algorithms
 
 ### A. Explainable Lexical Sentiment & Emotion Engine
 
@@ -325,17 +402,21 @@ flowchart LR
 
 #### Architectural Comparison
 
+<div align="center">
+
 | Feature | NEXUS Tamper-Evident Hash Chain | Distributed Blockchain |
-|---|---|---|
+|:---|:---|:---|
 | **Cryptographic Algorithm** | SHA-256 (FIPS 180-4) | SHA-256, Keccak-256, etc. |
 | **Tamper Detection** | Instantaneous mathematical verification | Cryptographic consensus & state roots |
 | **Decentralized Consensus** | No (Local & Centralized DB Storage) | Yes (Proof-of-Stake / Proof-of-Work) |
 | **Smart Contracts / Gas** | None (Zero overhead) | Required for execution |
 | **Audit Verification Speed** | Sub-millisecond (1,200 records in < 8ms) | Dependent on block confirmation times |
 
+</div>
+
 ---
 
-## 7. User Experience & Product Navigation
+## 8. User Experience & Product Navigation
 
 The application provides a comprehensive workspace organized into analytical and editorial routes:
 
@@ -370,7 +451,7 @@ flowchart LR
 
 ---
 
-## 8. Backend & Database Architecture
+## 9. Backend & Database Architecture
 
 ### Prisma Entity Relationship Diagram
 
@@ -443,7 +524,7 @@ erDiagram
 
 ---
 
-## 9. REST API Documentation
+## 10. REST API Documentation
 
 The backend service (`server.ts`) exposes the following endpoints:
 
@@ -500,7 +581,7 @@ The backend service (`server.ts`) exposes the following endpoints:
 
 ---
 
-## 10. Data Ingestion & Normalization Engine
+## 11. Data Ingestion & Normalization Engine
 
 NEXUS includes client-side CSV and JSON ingestion pipelines (`src/pages/DataSources.tsx` and `src/context/DataContext.tsx`).
 
@@ -520,7 +601,7 @@ When imported:
 
 ---
 
-## 11. Repository Structure
+## 12. Repository Structure
 
 ```text
 Nexus-socialMediaAnalytics-main/
@@ -568,10 +649,12 @@ Nexus-socialMediaAnalytics-main/
 
 ---
 
-## 12. Environment Configuration & Variables
+## 13. Environment Configuration & Variables
+
+<div align="center">
 
 | Variable | Scope | Description | Required For |
-|---|---|---|---|
+|:---|:---:|:---|:---|
 | `DATABASE_URL` | Server | Supabase PostgreSQL connection URI (with transaction pooler). | Prisma database persistence. |
 | `DIRECT_URL` | Server | Direct PostgreSQL connection string for Prisma migrations. | Direct schema operations. |
 | `SUPABASE_URL` | Client & Server | Supabase project API URL. | Supabase JS client integration. |
@@ -579,45 +662,39 @@ Nexus-socialMediaAnalytics-main/
 | `APP_URL` | Server | Deployed base application URL. | Hosting & metadata references. |
 | `GEMINI_API_KEY` | Server | Configuration placeholder for future LLM integration. | *Optional / Unused in current deterministic release.* |
 
+</div>
+
 > **Note on Fallback Mode:** If `DATABASE_URL` is omitted, NEXUS automatically falls back to in-memory state initialized with the deterministic 1,200-event dataset. All analytical and cryptographic tools remain fully functional without external database credentials.
 
 ---
 
-## 13. Installation & Local Setup Guide
+## 14. Installation & Local Setup Guide
 
-### Prerequisites
-- **Node.js**: v18.0.0 or higher (v20+ recommended)
-- **npm**: v9.0.0 or higher
+### 📋 Prerequisites
+- **Node.js**: `v18.0.0` or higher (`v20+` recommended)
+- **npm**: `v9.0.0` or higher
 
-### Step 1: Clone and Install Dependencies
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/your-org/nexus-social-media-analytics.git
 cd nexus-social-media-analytics
 
-# Install exact dependencies
+# 2. Install exact dependencies
 npm install
-```
 
-### Step 2: Configure Environment Variables
-```bash
-# Copy example environment configuration
+# 3. Copy example environment configuration
 cp .env.example .env
-```
-*(Optional: Populate `DATABASE_URL` with your PostgreSQL or Supabase credentials if persistent database storage is desired).*
 
-### Step 3: Generate Prisma Client
-```bash
+# 4. Generate Prisma ORM Client
 npm run prisma:generate
-```
 
-### Step 4: Run Development Server
-```bash
+# 5. Launch Development Server
 npm run dev
 ```
-The application will launch on `http://localhost:3000`.
 
-### Step 5: Verify Production Build & Type Checking
+The application will be accessible at `http://localhost:3000`.
+
+### 🏗️ Build & Validation Commands
 ```bash
 # Validate TypeScript compliance
 npm run lint
@@ -631,7 +708,7 @@ npm run start
 
 ---
 
-## 14. Current Implementation vs. Future SIH Extension Roadmap
+## 15. Current Implementation vs. Future SIH Extension Roadmap
 
 ```mermaid
 timeline
@@ -643,7 +720,7 @@ timeline
         Multi-Channel Ingestion : CSV/JSON normalization & Supabase sync
     section Phase 2 (Near-Term SIH Evolution)
         Streaming Connectors : Live API integration for X, Telegram & Reddit
-        Transformer Inference : Local quantized LLM inference for nuanced multilingual nuances
+        Transformer Inference : Local quantized LLM inference for multilingual nuances
         Decentralized Anchoring : Merkle root anchoring to public ledger testnets
     section Phase 3 (Production SIH Scale)
         Distributed Ingestion : Kafka-based event streaming pipeline
@@ -653,7 +730,7 @@ timeline
 
 ---
 
-## 15. Security, Integrity & Ethical Considerations
+## 16. Security, Integrity & Ethical Considerations
 
 1. **Deterministic & Explainable Analytics**: The analytical scoring rules avoid ungrounded hallucinations by relying on transparent lexical weights and deterministic arithmetic.
 2. **Cryptographic Tamper Detection**: The SHA-256 hash chain prevents silent post-hoc tampering of archived intelligence records.
@@ -662,7 +739,7 @@ timeline
 
 ---
 
-## 16. Contributing & License
+## 17. Contributing & License
 
 ### Contributing Workflow
 1. Fork the repository.
@@ -671,4 +748,24 @@ timeline
 4. Submit a Pull Request with complete technical documentation.
 
 ### License
-This repository is released under standard open-source evaluation terms for Smart India Hackathon (SIH) 2026 evaluation under Problem Statement ID 26152 (NTRO). Please refer to the repository license notice for specific redistribution terms.
+This repository is released under standard open-source evaluation terms for Smart India Hackathon (SIH) 2026 evaluation under Problem Statement ID 26152 (NTRO).
+
+---
+
+## 18. ⭐ Star Our GitHub Repository
+
+<div align="center">
+
+### 🌟 Found NEXUS insightful? Show your support!
+
+If you find this project valuable for social intelligence research, disinformation analytics, or tamper-evident forensic architectures, please consider giving our repository a **Star** on GitHub!
+
+<br/>
+
+[![GitHub Stars](https://img.shields.io/badge/⭐%20Star%20This%20Repo-NEXUS-blue?style=for-the-badge&logo=github)](https://github.com/)
+
+<br/>
+
+*Built with passion by **Team Caffeine Coders** (CSE 2nd Year) for SIH 2026*
+
+</div>
